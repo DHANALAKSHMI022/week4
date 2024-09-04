@@ -21,7 +21,7 @@ pipeline {
         stage('docker image'){
             steps{
              
-                sh 'docker build -t greetingapp:${BUILD_NUMBER} -f Dockerfile .'
+                sh 'docker build -t greeting:${BUILD_NUMBER} -f Dockerfile .'
                 echo 'docker image is created'
             }
         }
